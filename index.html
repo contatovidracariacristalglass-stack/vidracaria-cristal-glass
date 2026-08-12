@@ -3,231 +3,333 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+
 <title>Vidraçaria Cristal Glass | Guarulhos - SP</title>
-<meta name="description" content="Vidraçaria Cristal Glass em Guarulhos. Box, portas, janelas, espelhos, sacadas e soluções em vidro sob medida.">
+
+<meta name="description" content="Vidraçaria Cristal Glass em Guarulhos - SP. Box, portas, janelas, espelhos e soluções em vidro sob medida.">
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
 
-html{scroll-behavior:smooth}
+html{
+  scroll-behavior:smooth;
+}
 
 body{
-font-family:Arial,Helvetica,sans-serif;
-background:#07111f;
-color:#fff;
-line-height:1.6
+  font-family:Arial,Helvetica,sans-serif;
+  background:#07111f;
+  color:#fff;
+  line-height:1.6;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
 }
 
 header{
-min-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-padding:30px 18px;
-background:
-linear-gradient(rgba(3,12,24,.82),rgba(3,12,24,.94)),
-url("logo-cristal-glass.jpg") center/cover;
-position:relative;
-overflow:hidden
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(7,17,31,.96);
+  border-bottom:1px solid #26364a;
+  backdrop-filter:blur(10px);
 }
 
-header:after{
-content:"";
-position:absolute;
-width:500px;
-height:500px;
-background:rgba(0,170,255,.14);
-border-radius:50%;
-filter:blur(80px);
-top:-180px;
-right:-180px
-}
-
-.container{
-width:100%;
-max-width:1100px;
-margin:auto;
-position:relative;
-z-index:2
+.nav{
+  max-width:1100px;
+  margin:auto;
+  padding:14px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
 }
 
 .logo{
-display:block;
-width:190px;
-max-width:65%;
-margin:0 auto 28px;
-border-radius:22px;
-box-shadow:0 0 35px rgba(0,174,255,.35)
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:bold;
+  font-size:18px;
+}
+
+.logo img{
+  width:52px;
+  height:52px;
+  object-fit:contain;
+  border-radius:50%;
+  background:#fff;
+}
+
+nav{
+  display:flex;
+  gap:18px;
+  align-items:center;
+}
+
+nav a{
+  color:#dce8f5;
+  font-size:14px;
+}
+
+nav a:hover{
+  color:#67e8f9;
+}
+
+.hero{
+  min-height:650px;
+  display:flex;
+  align-items:center;
+  text-align:center;
+  padding:70px 20px;
+  background:
+    linear-gradient(rgba(7,17,31,.82),rgba(7,17,31,.95)),
+    radial-gradient(circle at center,#16415c 0,#07111f 65%);
+}
+
+.hero-content{
+  max-width:900px;
+  margin:auto;
 }
 
 .badge{
-display:inline-block;
-padding:8px 16px;
-border:1px solid rgba(100,200,255,.4);
-border-radius:30px;
-background:rgba(255,255,255,.07);
-backdrop-filter:blur(10px);
-font-size:14px;
-margin-bottom:18px
+  display:inline-block;
+  padding:8px 16px;
+  border:1px solid #3a6a82;
+  border-radius:30px;
+  color:#8ee8f5;
+  margin-bottom:20px;
+  font-size:14px;
 }
 
 h1{
-font-size:clamp(38px,8vw,72px);
-line-height:1.05;
-margin-bottom:18px
+  font-size:clamp(38px,7vw,70px);
+  line-height:1.05;
+  margin-bottom:22px;
 }
 
 h1 span{
-color:#37bfff
+  color:#67e8f9;
 }
 
-.hero-text{
-font-size:clamp(18px,4vw,24px);
-color:#d8e8f5;
-max-width:760px;
-margin:0 auto 30px
+.hero p{
+  max-width:720px;
+  margin:0 auto 30px;
+  color:#c7d5e4;
+  font-size:18px;
 }
 
 .buttons{
-display:flex;
-flex-wrap:wrap;
-gap:14px;
-justify-content:center
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:14px;
 }
 
 .btn{
-display:inline-block;
-padding:15px 24px;
-border-radius:12px;
-text-decoration:none;
-font-weight:bold;
-transition:.2s;
-border:1px solid rgba(255,255,255,.15)
+  display:inline-block;
+  padding:14px 22px;
+  border-radius:10px;
+  font-weight:bold;
+  border:1px solid #3c6479;
+  transition:.2s;
 }
 
-.btn:hover{transform:translateY(-2px)}
+.btn:hover{
+  transform:translateY(-2px);
+}
 
 .whatsapp{
-background:#19c463;
-color:#fff
+  background:#20c66b;
+  color:#fff;
+  border-color:#20c66b;
 }
 
 .instagram{
-background:#fff;
-color:#111
+  background:#c13584;
+  color:#fff;
+  border-color:#c13584;
+}
+
+.outline{
+  background:transparent;
+  color:#fff;
 }
 
 section{
-padding:75px 18px
+  padding:80px 20px;
 }
 
-section:nth-child(even){
-background:#0b192a
+.container{
+  max-width:1100px;
+  margin:auto;
 }
 
 .section-title{
-font-size:clamp(30px,6vw,45px);
-text-align:center;
-margin-bottom:14px
+  text-align:center;
+  margin-bottom:45px;
 }
 
-.section-title span{color:#37bfff}
-
-.section-subtitle{
-text-align:center;
-color:#b9c9d8;
-max-width:700px;
-margin:0 auto 42px
+.section-title h2{
+  font-size:36px;
+  margin-bottom:10px;
 }
 
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px
+.section-title p{
+  color:#aebfd0;
+}
+
+.services{
+  background:#091827;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
 }
 
 .card{
-padding:28px 22px;
-border-radius:18px;
-background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.025));
-border:1px solid rgba(130,200,255,.15);
-box-shadow:0 12px 35px rgba(0,0,0,.18)
+  background:#0e2033;
+  border:1px solid #263f55;
+  border-radius:16px;
+  padding:28px 22px;
+  text-align:center;
+  transition:.2s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  border-color:#4fc3d8;
+}
+
+.icon{
+  font-size:40px;
+  margin-bottom:14px;
 }
 
 .card h3{
-color:#fff;
-font-size:21px;
-margin-bottom:10px
+  margin-bottom:10px;
+  font-size:21px;
 }
 
-.card p{color:#b9c9d8}
+.card p{
+  color:#b8c7d5;
+  font-size:15px;
+}
 
-.icon{
-font-size:34px;
-margin-bottom:12px
+.about{
+  background:#07111f;
+}
+
+.about-box{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:35px;
+  align-items:center;
+}
+
+.about-text h2{
+  font-size:38px;
+  margin-bottom:18px;
+}
+
+.about-text p{
+  color:#c2d0dc;
+  margin-bottom:15px;
 }
 
 .highlight{
-text-align:center;
-padding:45px 22px;
-border-radius:24px;
-background:linear-gradient(135deg,#0b5d91,#09233b);
-border:1px solid rgba(80,190,255,.3)
-}
-
-.highlight h2{
-font-size:clamp(28px,6vw,44px);
-margin-bottom:12px
-}
-
-.highlight p{
-font-size:18px;
-color:#d8e8f5;
-margin-bottom:25px
+  border-left:4px solid #67e8f9;
+  padding-left:18px;
+  margin-top:22px;
 }
 
 .contact{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:20px;
-margin-top:35px
+  background:#0a1b2c;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
 }
 
 .contact-box{
-padding:25px;
-border-radius:18px;
-background:#101f32;
-border:1px solid rgba(255,255,255,.1)
+  background:#0e2236;
+  border:1px solid #29445b;
+  border-radius:14px;
+  padding:22px;
 }
 
 .contact-box strong{
-display:block;
-font-size:18px;
-margin-bottom:7px;
-color:#37bfff
+  display:block;
+  margin-bottom:6px;
+  color:#67e8f9;
 }
 
-.contact-box a{
-color:#fff;
-text-decoration:none;
-word-break:break-word
+.contact-box span{
+  color:#c9d6e2;
+}
+
+.final{
+  text-align:center;
+  background:
+    linear-gradient(rgba(7,17,31,.94),rgba(7,17,31,.98)),
+    radial-gradient(circle,#19445a,#07111f);
+}
+
+.final h2{
+  font-size:38px;
+  margin-bottom:15px;
+}
+
+.final p{
+  color:#c4d2df;
+  margin-bottom:25px;
 }
 
 footer{
-padding:35px 18px;
-text-align:center;
-background:#030a13;
-color:#94a8ba
+  text-align:center;
+  padding:35px 20px;
+  background:#050c15;
+  border-top:1px solid #223449;
+  color:#9fb0c0;
 }
 
-footer strong{color:#fff}
+footer strong{
+  color:#fff;
+}
 
-@media(max-width:600px){
-header{min-height:100svh}
-section{padding:55px 15px}
-.logo{width:160px}
-.buttons{flex-direction:column}
-.btn{text-align:center;width:100%}
+@media(max-width:800px){
+  nav{
+    display:none;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .about-box{
+    grid-template-columns:1fr;
+  }
+
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  section{
+    padding:60px 18px;
+  }
+
+  .hero{
+    min-height:600px;
+  }
 }
 </style>
 </head>
@@ -235,166 +337,271 @@ section{padding:55px 15px}
 <body>
 
 <header>
-<div class="container" style="text-align:center">
+  <div class="nav">
 
-<img class="logo" src="logo-cristal-glass.jpg" alt="Vidraçaria Cristal Glass">
+    <a href="#inicio" class="logo">
+      <img src="logo-cristal-glass.jpg" alt="Logo Vidraçaria Cristal Glass">
+      <span>Vidraçaria Cristal Glass</span>
+    </a>
 
-<div class="badge">GUARULHOS • SP</div>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#empresa">Sobre nós</a>
+      <a href="#contato">Contato</a>
+    </nav>
 
-<h1>Vidraçaria <span>Cristal Glass</span></h1>
-
-<p class="hero-text">
-Vidros sob medida, acabamento de qualidade e soluções completas para sua casa ou empresa.
-</p>
-
-<div class="buttons">
-<a class="btn whatsapp" href="https://wa.me/5511937063071" target="_blank">
-💬 Solicitar orçamento
-</a>
-
-<a class="btn instagram" href="https://www.instagram.com/vidracariacristalglass2023?igsh=NW42YnZlMzdkMW" target="_blank">
-📸 Instagram
-</a>
-</div>
-
-</div>
+  </div>
 </header>
 
-<section>
-<div class="container">
+<main>
 
-<h2 class="section-title">Nossas <span>soluções</span></h2>
+<section class="hero" id="inicio">
+  <div class="hero-content">
 
-<p class="section-subtitle">
-Trabalhamos com projetos em vidro para deixar seu ambiente mais bonito, seguro e moderno.
-</p>
+    <div class="badge">
+      📍 Guarulhos - SP
+    </div>
 
-<div class="cards">
+    <h1>
+      Vidraçaria <span>Cristal Glass</span>
+    </h1>
 
-<div class="card">
-<div class="icon">🚿</div>
-<h3>Box para banheiro</h3>
-<p>Box de vidro sob medida com acabamento moderno e instalação profissional.</p>
-</div>
+    <p>
+      Vidros e soluções sob medida para deixar sua casa ou empresa
+      mais bonita, moderna e segura.
+    </p>
 
-<div class="card">
-<div class="icon">🪟</div>
-<h3>Janelas e portas</h3>
-<p>Soluções em vidro para diferentes ambientes residenciais e comerciais.</p>
-</div>
+    <div class="buttons">
 
-<div class="card">
-<div class="icon">✨</div>
-<h3>Espelhos</h3>
-<p>Espelhos sob medida para valorizar e ampliar visualmente seus ambientes.</p>
-</div>
+      <a
+        class="btn whatsapp"
+        href="https://wa.me/5511937063071?text=Olá!%20Gostaria%20de%20pedir%20um%20orçamento."
+        target="_blank">
+        💬 Pedir orçamento pelo WhatsApp
+      </a>
 
-<div class="card">
-<div class="icon">🏢</div>
-<h3>Sacadas</h3>
-<p>Fechamento e soluções para sacadas com segurança e excelente acabamento.</p>
-</div>
+      <a
+        class="btn instagram"
+        href="https://www.instagram.com/vidracariacristalglass2023/"
+        target="_blank">
+        📷 Instagram
+      </a>
 
-</div>
-</div>
+      <a class="btn outline" href="#servicos">
+        Ver nossos serviços
+      </a>
+
+    </div>
+  </div>
 </section>
 
-<section>
-<div class="container">
 
-<div class="highlight">
-<h2>Especialistas em manutenção de sacadas</h2>
+<section class="services" id="servicos">
 
-<p>
-Serviços para manter sua sacada segura, funcionando corretamente e com ótimo acabamento.
-</p>
+  <div class="container">
 
-<a class="btn whatsapp" href="https://wa.me/5511937063071" target="_blank">
-Falar pelo WhatsApp
-</a>
-</div>
+    <div class="section-title">
+      <h2>Nossos serviços</h2>
+      <p>Soluções em vidro para sua casa, comércio ou empresa.</p>
+    </div>
 
-</div>
+    <div class="grid">
+
+      <div class="card">
+        <div class="icon">🚿</div>
+        <h3>Box para banheiro</h3>
+        <p>
+          Box de vidro sob medida, com acabamento moderno e elegante.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🚪</div>
+        <h3>Portas de vidro</h3>
+        <p>
+          Portas de vidro para residências, comércios e empresas.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🪟</div>
+        <h3>Janelas</h3>
+        <p>
+          Soluções em vidro para melhorar iluminação, ventilação e beleza.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🪞</div>
+        <h3>Espelhos</h3>
+        <p>
+          Espelhos sob medida para ambientes residenciais e comerciais.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🏢</div>
+        <h3>Vidros para comércio</h3>
+        <p>
+          Projetos em vidro para lojas, escritórios e estabelecimentos.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">✨</div>
+        <h3>Projetos sob medida</h3>
+        <p>
+          Cada projeto é pensado de acordo com o espaço e a necessidade
+          do cliente.
+        </p>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<section>
-<div class="container">
 
-<h2 class="section-title">Por que escolher a <span>Cristal Glass?</span></h2>
+<section class="about" id="empresa">
 
-<p class="section-subtitle">
-Atendimento próximo, soluções personalizadas e cuidado em cada detalhe do serviço.
-</p>
+  <div class="container">
 
-<div class="cards">
+    <div class="about-box">
 
-<div class="card">
-<div class="icon">📐</div>
-<h3>Sob medida</h3>
-<p>Cada projeto é pensado de acordo com as medidas e necessidades do seu ambiente.</p>
-</div>
+      <div class="about-text">
 
-<div class="card">
-<div class="icon">🔧</div>
-<h3>Instalação profissional</h3>
-<p>Execução cuidadosa para garantir um resultado bonito e funcional.</p>
-</div>
+        <h2>Qualidade e confiança</h2>
 
-<div class="card">
-<div class="icon">⭐</div>
-<h3>Qualidade</h3>
-<p>Priorizamos bons materiais, acabamento e atenção aos detalhes.</p>
-</div>
+        <p>
+          A <strong>Vidraçaria Cristal Glass</strong> trabalha com
+          soluções em vidro para deixar seus ambientes mais bonitos,
+          funcionais e modernos.
+        </p>
 
-</div>
-</div>
+        <p>
+          Atendemos em <strong>Guarulhos - SP</strong>, oferecendo
+          serviços sob medida para residências, comércios e empresas.
+        </p>
+
+        <div class="highlight">
+          📐 Trabalhamos com projetos sob medida.
+        </div>
+
+      </div>
+
+      <div class="card">
+        <div class="icon">💎</div>
+        <h3>Vidraçaria Cristal Glass</h3>
+        <p>
+          Seu projeto em vidro com cuidado, qualidade e acabamento.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
-<section>
-<div class="container">
 
-<h2 class="section-title">Fale <span>conosco</span></h2>
+<section class="contact" id="contato">
 
-<p class="section-subtitle">
-Entre em contato e solicite seu orçamento.
-</p>
+  <div class="container">
 
-<div class="contact">
+    <div class="section-title">
+      <h2>Entre em contato</h2>
+      <p>Solicite seu orçamento sem compromisso.</p>
+    </div>
 
-<div class="contact-box">
-<strong>📱 WhatsApp</strong>
-<a href="https://wa.me/5511937063071" target="_blank">
-(11) 93706-3071
-</a>
-</div>
+    <div class="contact-grid">
 
-<div class="contact-box">
-<strong>📸 Instagram</strong>
-<a href="https://www.instagram.com/vidracariacristalglass2023?igsh=NW42YnZlMzdkMW" target="_blank">
-@vidracariacristalglass2023
-</a>
-</div>
+      <div class="contact-box">
+        <strong>📱 WhatsApp</strong>
+        <span>(11) 93706-3071</span>
+      </div>
 
-<div class="contact-box">
-<strong>📍 Atendimento</strong>
-<span>Guarulhos - SP</span>
-</div>
+      <div class="contact-box">
+        <strong>📍 Atendimento</strong>
+        <span>Guarulhos - SP</span>
+      </div>
 
-</div>
+      <div class="contact-box">
+        <strong>📍 Endereço</strong>
+        <span>Avenida Amália Golin Pagnoncelli - Guarulhos - SP</span>
+      </div>
 
-<div class="buttons" style="margin-top:35px">
-<a class="btn whatsapp" href="https://wa.me/5511937063071" target="_blank">
-💬 Pedir orçamento pelo WhatsApp
-</a>
-</div>
+      <div class="contact-box">
+        <strong>📷 Instagram</strong>
+        <span>@vidracariacristalglass2023</span>
+      </div>
 
-</div>
+    </div>
+
+    <div class="buttons" style="margin-top:30px">
+
+      <a
+        class="btn whatsapp"
+        href="https://wa.me/5511937063071?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento."
+        target="_blank">
+        💬 Falar pelo WhatsApp
+      </a>
+
+      <a
+        class="btn instagram"
+        href="https://www.instagram.com/vidracariacristalglass2023/"
+        target="_blank">
+        📷 Ver Instagram
+      </a>
+
+    </div>
+
+  </div>
+
 </section>
+
+
+<section class="final">
+
+  <div class="container">
+
+    <h2>Vamos realizar seu projeto?</h2>
+
+    <p>
+      Entre em contato com a Vidraçaria Cristal Glass e peça seu orçamento.
+    </p>
+
+    <div class="buttons">
+
+      <a
+        class="btn whatsapp"
+        href="https://wa.me/5511937063071?text=Olá!%20Vim%20pelo%20site%20da%20Vidraçaria%20Cristal%20Glass."
+        target="_blank">
+        💬 Pedir orçamento
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
 
 <footer>
-<p><strong>Vidraçaria Cristal Glass</strong></p>
-<p>Guarulhos - SP • Vidros e soluções sob medida</p>
-<p>© 2026 Todos os direitos reservados.</p>
+
+  <p>
+    <strong>Vidraçaria Cristal Glass</strong>
+  </p>
+
+  <p>
+    Guarulhos - SP • Vidros e soluções sob medida
+  </p>
+
+  <p>
+    © 2026 Todos os direitos reservados.
+  </p>
+
 </footer>
 
 </body>
