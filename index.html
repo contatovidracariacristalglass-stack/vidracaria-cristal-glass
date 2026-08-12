@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vidraçaria Cristal Glass — vidros, box, portas, janelas e soluções em vidro sob medida.">
+  <title>Vidraçaria Cristal Glass</title>
+  <style>
+    :root{--dark:#111827;--blue:#2563eb;--light:#f8fafc;--text:#334155;--white:#fff}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--light);line-height:1.6}
+    header{background:rgba(17,24,39,.96);color:#fff;position:sticky;top:0;z-index:10}
+    nav{max-width:1100px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .logo{font-size:22px;font-weight:800;letter-spacing:.3px}
+    nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:14px}
+    .hero{background:linear-gradient(135deg,#0f172a,#2563eb);color:#fff;padding:90px 20px}
+    .hero-inner{max-width:1100px;margin:auto}
+    .hero h1{font-size:clamp(38px,7vw,64px);line-height:1.05;max-width:750px;margin-bottom:20px}
+    .hero p{font-size:19px;max-width:650px;margin-bottom:30px;color:#e2e8f0}
+    .btn{display:inline-block;padding:14px 22px;border-radius:10px;text-decoration:none;font-weight:700;margin-right:10px}
+    .primary{background:#fff;color:#1d4ed8}.secondary{border:1px solid rgba(255,255,255,.5);color:#fff}
+    section{max-width:1100px;margin:auto;padding:70px 20px}
+    .title{text-align:center;margin-bottom:38px}.title h2{font-size:34px;color:var(--dark)}.title p{margin-top:8px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+    .card{background:#fff;padding:28px;border-radius:16px;box-shadow:0 8px 30px rgba(15,23,42,.07)}
+    .card .icon{font-size:32px;margin-bottom:12px}.card h3{color:var(--dark);margin-bottom:8px}
+    .about{background:#fff;max-width:none}.about-inner{max-width:1100px;margin:auto;padding:70px 20px;display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+    .about h2{font-size:36px;color:var(--dark);margin-bottom:15px}.check{margin:12px 0}
+    .contact{background:#0f172a;color:#fff;max-width:none}.contact-inner{max-width:1100px;margin:auto;padding:70px 20px;text-align:center}
+    .contact h2{font-size:36px;margin-bottom:12px}.contact p{color:#cbd5e1;margin-bottom:25px}
+    footer{background:#020617;color:#94a3b8;text-align:center;padding:24px 20px;font-size:13px}
+    .whatsapp{position:fixed;right:20px;bottom:20px;background:#22c55e;color:#fff;text-decoration:none;padding:14px 18px;border-radius:999px;font-weight:800;box-shadow:0 8px 25px rgba(0,0,0,.25);z-index:20}
+    @media(max-width:700px){nav{flex-direction:column;align-items:flex-start}nav div:last-child{display:none}.about-inner{grid-template-columns:1fr}.hero{padding:65px 20px}}
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">VIDRAÇARIA CRISTAL GLASS</div>
+    <div><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Vidros sob medida para deixar seu ambiente incrível.</h1>
+      <p>Box, portas, janelas, espelhos e soluções em vidro com acabamento profissional.</p>
+      <a class="btn primary" href="#contato">Solicitar orçamento</a>
+      <a class="btn secondary" href="#servicos">Ver serviços</a>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <div class="title">
+      <h2>Nossos serviços</h2>
+      <p>Soluções para sua casa, comércio ou empresa.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="icon">🚿</div><h3>Box para banheiro</h3><p>Modelos modernos e sob medida para seu banheiro.</p></div>
+      <div class="card"><div class="icon">🚪</div><h3>Portas de vidro</h3><p>Elegância, segurança e praticidade para ambientes residenciais e comerciais.</p></div>
+      <div class="card"><div class="icon">🪟</div><h3>Janelas e fechamentos</h3><p>Vidros para melhorar iluminação, conforto e acabamento.</p></div>
+      <div class="card"><div class="icon">🪞</div><h3>Espelhos</h3><p>Espelhos sob medida para banheiros, quartos, lojas e projetos especiais.</p></div>
+    </div>
+  </section>
+
+  <div class="about" id="sobre">
+    <div class="about-inner">
+      <div>
+        <h2>Qualidade em cada detalhe</h2>
+        <p>Na Vidraçaria Cristal Glass, cada projeto é pensado para combinar beleza, funcionalidade e um acabamento impecável.</p>
+        <p class="check">✓ Atendimento personalizado</p>
+        <p class="check">✓ Projetos sob medida</p>
+        <p class="check">✓ Orçamento sem compromisso</p>
+        <p class="check">✓ Instalação profissional</p>
+      </div>
+      <div class="card">
+        <h3>Precisa de um orçamento?</h3>
+        <p>Envie as medidas, fotos ou explique o que você precisa. Nossa equipe poderá avaliar seu projeto.</p>
+        <br><a class="btn primary" style="background:#2563eb;color:#fff" href="#contato">Falar com a vidraçaria</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="contato" class="contact">
+    <div class="contact-inner">
+      <h2>Vamos fazer seu projeto?</h2>
+      <p>Entre em contato e solicite seu orçamento.</p>
+      <!-- TROQUE O NÚMERO ABAIXO pelo WhatsApp da empresa, somente números com DDI/DDD -->
+      <a class="btn primary" href="https://wa.me/5511937063071?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener">📲 Pedir orçamento pelo WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<a class="whatsapp" href="https://wa.me/5511937063071?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener">WhatsApp</a>
+
+<footer>
+  © 2026 Vidraçaria Cristal Glass · Todos os direitos reservados.
+</footer>
+</body>
+</html>
