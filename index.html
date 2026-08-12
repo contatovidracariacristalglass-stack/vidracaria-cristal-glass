@@ -4,43 +4,398 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Vidraçaria Cristal Glass | Guarulhos - SP</title>
-<meta name="description" content="Vidraçaria Cristal Glass em Guarulhos. Box, portas, janelas, espelhos e soluções em vidro sob medida.">
+<meta name="description" content="Vidraçaria Cristal Glass em Guarulhos. Box, portas, janelas, espelhos, sacadas e soluções em vidro sob medida.">
+
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:#10213d;background:#f7f9fc}a{text-decoration:none}.top{background:#07111f;color:#fff;padding:10px;text-align:center;font-size:14px}header{background:#fff;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 15px #0001}.logo{height:62px;max-width:230px;object-fit:contain}.brand{font-weight:800;font-size:20px}.hero{background:linear-gradient(135deg,#071b42,#1454b8);color:#fff;padding:62px 22px 70px;text-align:center}.hero h1{font-size:42px;line-height:1.05;margin:10px auto 18px;max-width:800px}.hero p{font-size:20px;line-height:1.5;max-width:700px;margin:0 auto 28px;color:#eaf2ff}.btn{display:inline-block;padding:16px 24px;border-radius:12px;font-weight:800;margin:6px;background:#fff;color:#0750b7}.whats{background:#18c866;color:#fff}.outline{background:transparent;border:2px solid #fff;color:#fff}section{padding:55px 20px;max-width:1100px;margin:auto}.title{text-align:center;font-size:32px;margin:0 0 12px}.sub{text-align:center;color:#61708a;margin:0 auto 30px;max-width:700px;line-height:1.5}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}.card{background:#fff;border-radius:18px;padding:24px;box-shadow:0 8px 25px #10213d12;border:1px solid #e8edf5}.icon{font-size:32px}.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px}.gallery img{width:100%;height:220px;object-fit:cover;border-radius:18px}.contact{background:#07111f;color:#fff;max-width:none}.contact-inner{max-width:1000px;margin:auto;text-align:center}.address{font-size:18px;line-height:1.6;color:#dbe7f7}footer{text-align:center;background:#030a12;color:#b9c6d8;padding:25px 15px;font-size:14px}.float{position:fixed;right:18px;bottom:18px;background:#18c866;color:#fff;padding:15px 20px;border-radius:40px;font-weight:800;box-shadow:0 8px 25px #0004}@media(max-width:600px){.hero h1{font-size:34px}.hero p{font-size:18px}.logo{height:52px;max-width:190px}}
+*{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#07111f;
+color:#fff;
+line-height:1.6
+}
+
+header{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:30px 18px;
+background:
+linear-gradient(rgba(3,12,24,.82),rgba(3,12,24,.94)),
+url("logo-cristal-glass.jpg") center/cover;
+position:relative;
+overflow:hidden
+}
+
+header:after{
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+background:rgba(0,170,255,.14);
+border-radius:50%;
+filter:blur(80px);
+top:-180px;
+right:-180px
+}
+
+.container{
+width:100%;
+max-width:1100px;
+margin:auto;
+position:relative;
+z-index:2
+}
+
+.logo{
+display:block;
+width:190px;
+max-width:65%;
+margin:0 auto 28px;
+border-radius:22px;
+box-shadow:0 0 35px rgba(0,174,255,.35)
+}
+
+.badge{
+display:inline-block;
+padding:8px 16px;
+border:1px solid rgba(100,200,255,.4);
+border-radius:30px;
+background:rgba(255,255,255,.07);
+backdrop-filter:blur(10px);
+font-size:14px;
+margin-bottom:18px
+}
+
+h1{
+font-size:clamp(38px,8vw,72px);
+line-height:1.05;
+margin-bottom:18px
+}
+
+h1 span{
+color:#37bfff
+}
+
+.hero-text{
+font-size:clamp(18px,4vw,24px);
+color:#d8e8f5;
+max-width:760px;
+margin:0 auto 30px
+}
+
+.buttons{
+display:flex;
+flex-wrap:wrap;
+gap:14px;
+justify-content:center
+}
+
+.btn{
+display:inline-block;
+padding:15px 24px;
+border-radius:12px;
+text-decoration:none;
+font-weight:bold;
+transition:.2s;
+border:1px solid rgba(255,255,255,.15)
+}
+
+.btn:hover{transform:translateY(-2px)}
+
+.whatsapp{
+background:#19c463;
+color:#fff
+}
+
+.instagram{
+background:#fff;
+color:#111
+}
+
+section{
+padding:75px 18px
+}
+
+section:nth-child(even){
+background:#0b192a
+}
+
+.section-title{
+font-size:clamp(30px,6vw,45px);
+text-align:center;
+margin-bottom:14px
+}
+
+.section-title span{color:#37bfff}
+
+.section-subtitle{
+text-align:center;
+color:#b9c9d8;
+max-width:700px;
+margin:0 auto 42px
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px
+}
+
+.card{
+padding:28px 22px;
+border-radius:18px;
+background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.025));
+border:1px solid rgba(130,200,255,.15);
+box-shadow:0 12px 35px rgba(0,0,0,.18)
+}
+
+.card h3{
+color:#fff;
+font-size:21px;
+margin-bottom:10px
+}
+
+.card p{color:#b9c9d8}
+
+.icon{
+font-size:34px;
+margin-bottom:12px
+}
+
+.highlight{
+text-align:center;
+padding:45px 22px;
+border-radius:24px;
+background:linear-gradient(135deg,#0b5d91,#09233b);
+border:1px solid rgba(80,190,255,.3)
+}
+
+.highlight h2{
+font-size:clamp(28px,6vw,44px);
+margin-bottom:12px
+}
+
+.highlight p{
+font-size:18px;
+color:#d8e8f5;
+margin-bottom:25px
+}
+
+.contact{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+margin-top:35px
+}
+
+.contact-box{
+padding:25px;
+border-radius:18px;
+background:#101f32;
+border:1px solid rgba(255,255,255,.1)
+}
+
+.contact-box strong{
+display:block;
+font-size:18px;
+margin-bottom:7px;
+color:#37bfff
+}
+
+.contact-box a{
+color:#fff;
+text-decoration:none;
+word-break:break-word
+}
+
+footer{
+padding:35px 18px;
+text-align:center;
+background:#030a13;
+color:#94a8ba
+}
+
+footer strong{color:#fff}
+
+@media(max-width:600px){
+header{min-height:100svh}
+section{padding:55px 15px}
+.logo{width:160px}
+.buttons{flex-direction:column}
+.btn{text-align:center;width:100%}
+}
 </style>
 </head>
+
 <body>
-<div class="top">📍 Guarulhos - SP | Orçamento rápido pelo WhatsApp</div>
-<header><img class="logo" src="logo-cristal-glass.jpg" alt="Vidraçaria Cristal Glass"><div class="brand">CRISTAL GLASS</div></header>
-<section class="hero">
-<h1>Vidros sob medida para deixar seu ambiente incrível.</h1>
-<p>Box, portas, janelas, espelhos e soluções em vidro com acabamento profissional.</p>
-<a class="btn whats" href="https://wa.me/5511937063071?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20na%20Vidraçaria%20Cristal%20Glass.">💬 Solicitar orçamento</a>
-<a class="btn outline" href="#servicos">Ver serviços</a>
-</section>
-<section id="servicos">
-<h2 class="title">Nossos serviços</h2><p class="sub">Soluções em vidro para residências, comércios e reformas.</p>
-<div class="cards">
-<div class="card"><div class="icon">🚿</div><h3>Box para banheiro</h3><p>Modelos modernos e sob medida.</p></div>
-<div class="card"><div class="icon">🚪</div><h3>Portas de vidro</h3><p>Elegância, segurança e aproveitamento de espaço.</p></div>
-<div class="card"><div class="icon">🪟</div><h3>Janelas</h3><p>Projetos em vidro pensados para seu ambiente.</p></div>
-<div class="card"><div class="icon">🪞</div><h3>Espelhos</h3><p>Espelhos sob medida para deixar o ambiente sofisticado.</p></div>
+
+<header>
+<div class="container" style="text-align:center">
+
+<img class="logo" src="logo-cristal-glass.jpg" alt="Vidraçaria Cristal Glass">
+
+<div class="badge">GUARULHOS • SP</div>
+
+<h1>Vidraçaria <span>Cristal Glass</span></h1>
+
+<p class="hero-text">
+Vidros sob medida, acabamento de qualidade e soluções completas para sua casa ou empresa.
+</p>
+
+<div class="buttons">
+<a class="btn whatsapp" href="https://wa.me/5511937063071" target="_blank">
+💬 Solicitar orçamento
+</a>
+
+<a class="btn instagram" href="https://www.instagram.com/vidracariacristalglass2023?igsh=NW42YnZlMzdkMW" target="_blank">
+📸 Instagram
+</a>
 </div>
-</section>
+
+</div>
+</header>
+
 <section>
-<h2 class="title">Inspire-se</h2><p class="sub">Alguns exemplos de ambientes com vidro. Peça seu orçamento para fazer seu projeto.</p>
-<div class="gallery">
-<img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80" alt="Ambiente moderno">
-<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Casa moderna">
-<img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=80" alt="Interior elegante">
+<div class="container">
+
+<h2 class="section-title">Nossas <span>soluções</span></h2>
+
+<p class="section-subtitle">
+Trabalhamos com projetos em vidro para deixar seu ambiente mais bonito, seguro e moderno.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<div class="icon">🚿</div>
+<h3>Box para banheiro</h3>
+<p>Box de vidro sob medida com acabamento moderno e instalação profissional.</p>
+</div>
+
+<div class="card">
+<div class="icon">🪟</div>
+<h3>Janelas e portas</h3>
+<p>Soluções em vidro para diferentes ambientes residenciais e comerciais.</p>
+</div>
+
+<div class="card">
+<div class="icon">✨</div>
+<h3>Espelhos</h3>
+<p>Espelhos sob medida para valorizar e ampliar visualmente seus ambientes.</p>
+</div>
+
+<div class="card">
+<div class="icon">🏢</div>
+<h3>Sacadas</h3>
+<p>Fechamento e soluções para sacadas com segurança e excelente acabamento.</p>
+</div>
+
+</div>
 </div>
 </section>
-<section class="contact"><div class="contact-inner">
-<h2 class="title">Vamos fazer seu projeto?</h2>
-<p class="address">📍 Avenida Amália Golin Pagnoncelli, nº 771<br>Jardim Rosa de França – Guarulhos/SP<br>CEP 07081-200</p>
-<a class="btn whats" href="https://wa.me/5511937063071?text=Olá!%20Vim%20pelo%20site%20da%20Vidraçaria%20Cristal%20Glass%20e%20quero%20um%20orçamento.">WhatsApp: (11) 93706-3071</a>
-<br><a class="btn outline" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Avenida%20Amália%20Golin%20Pagnoncelli%20771%20Guarulhos%20SP">📍 Como chegar</a>
-</div></section>
-<footer>© 2026 Vidraçaria Cristal Glass — Guarulhos/SP</footer>
-<a class="float" href="https://wa.me/5511937063071?text=Olá!%20Gostaria%20de%20um%20orçamento.">WhatsApp</a>
-</body></html>
+
+<section>
+<div class="container">
+
+<div class="highlight">
+<h2>Especialistas em manutenção de sacadas</h2>
+
+<p>
+Serviços para manter sua sacada segura, funcionando corretamente e com ótimo acabamento.
+</p>
+
+<a class="btn whatsapp" href="https://wa.me/5511937063071" target="_blank">
+Falar pelo WhatsApp
+</a>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2 class="section-title">Por que escolher a <span>Cristal Glass?</span></h2>
+
+<p class="section-subtitle">
+Atendimento próximo, soluções personalizadas e cuidado em cada detalhe do serviço.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<div class="icon">📐</div>
+<h3>Sob medida</h3>
+<p>Cada projeto é pensado de acordo com as medidas e necessidades do seu ambiente.</p>
+</div>
+
+<div class="card">
+<div class="icon">🔧</div>
+<h3>Instalação profissional</h3>
+<p>Execução cuidadosa para garantir um resultado bonito e funcional.</p>
+</div>
+
+<div class="card">
+<div class="icon">⭐</div>
+<h3>Qualidade</h3>
+<p>Priorizamos bons materiais, acabamento e atenção aos detalhes.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2 class="section-title">Fale <span>conosco</span></h2>
+
+<p class="section-subtitle">
+Entre em contato e solicite seu orçamento.
+</p>
+
+<div class="contact">
+
+<div class="contact-box">
+<strong>📱 WhatsApp</strong>
+<a href="https://wa.me/5511937063071" target="_blank">
+(11) 93706-3071
+</a>
+</div>
+
+<div class="contact-box">
+<strong>📸 Instagram</strong>
+<a href="https://www.instagram.com/vidracariacristalglass2023?igsh=NW42YnZlMzdkMW" target="_blank">
+@vidracariacristalglass2023
+</a>
+</div>
+
+<div class="contact-box">
+<strong>📍 Atendimento</strong>
+<span>Guarulhos - SP</span>
+</div>
+
+</div>
+
+<div class="buttons" style="margin-top:35px">
+<a class="btn whatsapp" href="https://wa.me/5511937063071" target="_blank">
+💬 Pedir orçamento pelo WhatsApp
+</a>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p><strong>Vidraçaria Cristal Glass</strong></p>
+<p>Guarulhos - SP • Vidros e soluções sob medida</p>
+<p>© 2026 Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
